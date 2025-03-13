@@ -948,12 +948,8 @@ h2, .h2 {
   position: relative;
   padding-left: 4rem;
 }
-.item:before {
+.item__icon {
   position: absolute;
-  content: "";
-  display: inline-flex;
-  background-image: url("../../images/icons/icon-cube.svg");
-  background-repeat: no-repeat;
   top: 0;
   left: 0;
   width: 2.5rem;
@@ -964,7 +960,7 @@ h2, .h2 {
   font-weight: 400;
 }
 .item__link {
-  font-family: var(--font-family-base);
+  font-family: var(--font-family-base), serif;
   color: var(--color-dark);
   text-decoration: underline;
 }
