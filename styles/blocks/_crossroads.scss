@@ -1,0 +1,36 @@
+.crossroads {
+  padding-block: var(--container-padding-y);
+  background-color: var(--color-light);
+
+  &__inner {
+    display: grid;
+    row-gap: var(--row-gap-section);
+  }
+
+  &__header {
+    max-width: 48.7rem;
+  }
+
+  &__body {
+    &-list {
+      display: flex;
+      justify-content: stretch;
+      align-content: center;
+      min-height: 100%;
+      gap: 1.5rem;
+      @media (max-width: 1023.98px) {
+        flex-wrap: wrap;
+        flex-direction: column;
+      }
+    }
+
+    &-item {
+      flex: 1 0 30%;
+      .card__title {
+        font-size: clamp(1.75rem, 1.232rem + 2.21vw, 3rem);
+        font-weight: 600;
+        color: var(--color-dark);
+      }
+    }
+  }
+}

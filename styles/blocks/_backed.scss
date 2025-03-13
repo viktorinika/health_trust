@@ -1,0 +1,69 @@
+.backed {
+  padding-block: var(--container-padding-y);
+
+  &__inner {
+    display: flex;
+    column-gap: 3rem;
+    @media (max-width: 1023.98px) {
+      flex-direction: column;
+      row-gap: var(--row-gap-section);
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    row-gap: var(--row-gap-section);
+    max-width: 38.25rem;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: var(--row-gap-section);
+  }
+
+  &__list {
+    display: flex;
+    column-gap: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    &-item {
+      position: relative;
+      flex: 0 1 45%;
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 1.5;
+      color: var(--color-dark);
+      padding-left: 2.5rem;
+      &:before {
+        position: absolute;
+        content: '';
+        display: inline-flex;
+        top: 0;
+        left: 0;
+        width: 1.5rem;
+        height: 1.5rem;
+        background-image: url("../../images/icons/check.svg");
+      }
+
+      @media (max-width: 767.98px){
+        flex: 1 0 100%;
+      }
+    }
+  }
+
+  &__image {
+    border: var(--border-tile);
+    border-radius: 1rem;
+    aspect-ratio: 620/644;
+    object-fit: cover;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+  }
+}

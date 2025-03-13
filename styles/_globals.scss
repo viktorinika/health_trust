@@ -1,0 +1,57 @@
+body {
+  font-family: var(--font-family-base);
+  font-size: clamp(1.125rem, 1.073rem + 0.22vw, 1.25rem);
+  font-weight: 300;
+  letter-spacing: -0.01em;
+  line-height: 1.5;
+
+  color: var(--color-text);
+  background-color: var(--color-white);
+  height: 100%;
+  &.menu-open {
+    overflow: hidden;
+    touch-action: none;
+    overscroll-behavior: none;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: clip;
+  min-height: 100%;
+}
+
+.wrapper > main {
+  flex-grow: 1;
+}
+
+.container {
+  max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  color: var(--color-dark);
+}
+
+h1, .h1 {
+  font-weight: 600;
+  font-size: clamp(2.5rem, 2.008rem + 2.1vw, 3.688rem);
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+}
+
+h2, .h2 {
+  font-family: var(--font-family-base);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  font-size: clamp(1.75rem, 1.543rem + 0.88vw, 2.25rem);
+}

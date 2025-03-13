@@ -1,0 +1,43 @@
+.why-now {
+  background-color: var(--color-light);
+
+  &__inner {
+    padding-top: var(--container-padding-y);
+    padding-bottom: var(--container-padding-y);
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--row-gap-section);
+  }
+
+  &__header {
+    max-width: 52.8rem;
+  }
+
+  &__body-list {
+    display: flex;
+    gap: 1.5rem;
+    counter-reset: item;
+    @media (max-width: 1023.98px) {
+      flex-direction: column;
+    }
+
+    & li::before {
+      counter-increment: item;
+      content: counter(item)" ";
+      margin-bottom: 1.25rem;
+      color: var(--color-white);
+      background-color: var(--color-dark);
+      width: 2rem;
+      height: 2rem;
+      border-radius: 0.7rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    li::marker {
+      opacity: 0;
+      visibility: hidden;
+      font-size: 0;
+    }
+  }
+}

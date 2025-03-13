@@ -1,0 +1,25 @@
+.quote {
+  background-color: var(--color-light);
+  padding-block: var(--container-padding-y);
+
+  &__body {
+    background-color: var(--color-white);
+    padding-block: clamp(2rem, 1.171rem + 3.54vw, 4rem);
+    padding-inline: clamp(1.5rem, -0.261rem + 7.51vw, 5.75rem);
+    display: grid;
+    row-gap: 2.5rem;
+  }
+
+  &__block {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: var(--color-dark);
+    span {
+      font-weight: 300;
+    }
+    @media (max-width: 767.98px) {
+      font-size: 1.25rem;
+    }
+  }
+}

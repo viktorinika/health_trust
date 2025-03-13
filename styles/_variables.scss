@@ -1,0 +1,28 @@
+:root {
+  --color-white: #ffffff;
+  --color-light: #fafafa;
+  --color-text: #667085;
+  --color-icons: #A1A1AA;
+  --color-dark: #101828;
+  --color-gray: #52525B;
+  --bg-light: #f3f6fc;
+
+  --bg-liner-gradient: linear-gradient(135deg, #71c9ff 0%, #b69bff 100%);
+  --shadow-linear-gradient: linear-gradient(90deg, #66BBFC 0%, #418EF4 23%, #4606EC 49%, #7B3DF0 74%, #AB89FC 100%);
+  --filter-blur: blur(64.50151062011719px);
+
+  --border: 1px solid var(--color-dark);
+  --box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
+  --border-radius: 12px;
+  --border-tile: 1px solid #e4e4e7;
+
+  --font-family-base: "Plus Jakarta Sans", sans-serif;
+  --second-family: "Inter", sans-serif;
+  --third-family: "Manrope", sans-serif;
+
+  --container-width: 80rem;
+  --container-padding-x: 1rem;
+  --container-padding-y: clamp(4rem, 3.171rem + 3.54vw, 6rem);
+  --row-gap-section: clamp(2.5rem, 1.878rem + 2.65vw, 4rem);
+  --column-gap-section: clamp(2rem, -8.25rem + 16.02vw, 4.563rem);
+}

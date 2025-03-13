@@ -1,0 +1,16 @@
+.banner {
+
+  &__inner {
+    padding-block: var(--container-padding-y);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: var(--row-gap-section);
+  }
+
+  &__header {
+    max-width: 48rem;
+    text-align: center;
+  }
+}
